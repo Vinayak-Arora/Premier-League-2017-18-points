@@ -22,9 +22,12 @@ A slider input to change to different match day frames.
 Selectize input to select or deselect teams' data to be visualised.
 A "Match Information" section to show the following data for the point (match) clicked on -
 
-Div = League Division.
-Date = Match Date (dd/mm/yy).
-HomeTeam = Home Team.
+Div = League Division
+
+Date = Match Date (dd/mm/yy)
+
+HomeTeam = Home Team
+
 AwayTeam = Away Team.
 FTHG and HG = Full Time Home Team Goals.
 FTAG and AG = Full Time Away Team Goals.
@@ -60,11 +63,11 @@ ABP = Away Team Bookings Points (10 = yellow, 25 = red)
 --x--
 
 Please change the following variables in each file -
-save_in <-  corresponding to the file directory in your computer
-file_name <- corresponding to the file name in your computer
+1. save_in <-  corresponding to the file directory in your computer
+2. file_name <- corresponding to the file name in your computer
 
 Note - 
 In the Premier League 2017/18 season :
-A team got 3 points from a win.
-A team got 1 point from a draw.
-A team got 0 point from a loss.
+1. A team got 3 points from a win.
+2. A team got 1 point from a draw.
+3. A team got 0 point from a loss.

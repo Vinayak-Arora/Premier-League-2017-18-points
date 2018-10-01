@@ -20,7 +20,7 @@ Shiny app code to visualise the data obtained from points_table.R <br>
 Overlapping line charts for each time. <br>
 A slider input to change to different match day frames. <br>
 Selectize input to select or deselect teams' data to be visualised. <br>
-A "Match Information" section to show the following data for the point (match) clicked on - <br>
+A "Match Information" section to show the following data for the point (match) clicked on - <br> <br>
 Div = League Division <br>
 Date = Match Date (dd/mm/yy) <br>
 HomeTeam = Home Team <br>
@@ -30,7 +30,7 @@ FTAG and AG = Full Time Away Team Goals <br>
 FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win) <br>
 HTHG = Half Time Home Team Goals <br>
 HTAG = Half Time Away Team Goals <br>
-HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win) <br> <br>
+HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win) <br> 
 Match Statistics (where available) --- <br>
 Attendance = Crowd Attendance <br>
 Referee = Match Referee <br>

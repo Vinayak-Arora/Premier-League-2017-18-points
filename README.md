@@ -22,12 +22,12 @@ A slider input to change to different match day frames.
 Selectize input to select or deselect teams' data to be visualised.
 A "Match Information" section to show the following data for the point (match) clicked on -
 
-Div = League Division
-Date = Match Date (dd/mm/yy)
-HomeTeam = Home Team
-AwayTeam = Away Team
-FTHG and HG = Full Time Home Team Goals
-FTAG and AG = Full Time Away Team Goals
+Div = League Division.
+Date = Match Date (dd/mm/yy).
+HomeTeam = Home Team.
+AwayTeam = Away Team.
+FTHG and HG = Full Time Home Team Goals.
+FTAG and AG = Full Time Away Team Goals.
 FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win)
 HTHG = Half Time Home Team Goals
 HTAG = Half Time Away Team Goals
@@ -57,7 +57,7 @@ AR = Away Team Red Cards
 HBP = Home Team Bookings Points (10 = yellow, 25 = red)
 ABP = Away Team Bookings Points (10 = yellow, 25 = red)
 
-----
+--x--
 
 Please change the following variables in each file -
 save_in <-  corresponding to the file directory in your computer

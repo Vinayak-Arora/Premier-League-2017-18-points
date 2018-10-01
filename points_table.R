@@ -1,5 +1,7 @@
+save_in <- "C://Program Files//RStudio//"
+file_name <- "premclean.csv"
 library(dplyr)
-prem <- read.csv("D://RStudio//Prem18//premclean.csv", stringsAsFactors = FALSE)
+prem <- read.csv(paste(save_in, filename, sep = ""), stringsAsFactors = FALSE)
 points <- data.frame("Matchday" = seq(from = 0, to = 38, by = 1), stringsAsFactors = FALSE)
 teams <- as.factor(prem$HomeTeam) %>%
           unique() %>%
@@ -8,7 +10,7 @@ teams <- as.factor(prem$HomeTeam) %>%
 points[ , teams] <- 0
 
 for(md in 1:38) {
-  #make a vector of the teams that drew  
+  #make a vector of the teams that had a draw  
   drawteam <- prem[(prem$Matchday == md) & (prem$Result == "Draw") , "HomeTeam"]
   drawteam <- c(drawteam, prem[(prem$Matchday == md) & (prem$Result == "Draw") , "AwayTeam"])
   # increment 1 point to the previous matchday for each team that drew
@@ -31,9 +33,6 @@ for(md in 1:38) {
 }
 
 points <- points[points$Matchday!= 0,]
-
-write.csv(points, "D://RStudio//Prem18//points_table.csv")
-
 ptable <- data.frame("Matchday" = rep(1:38, each=20), 
                      "Team" = rep(teams, times = 38),
                      stringsAsFactors = FALSE)
@@ -44,4 +43,5 @@ for(md in 1:38) {
   ptable[ptable$Matchday ==md , "Points"] <- as.numeric(points[md == points$Matchday, c(-1)])
 }
 
-write.csv(ptable, "D://RStudio//Prem18//points.csv")
+file_name <- "points.csv"
+write.csv(ptable, paste(save_in, file_name, sep = ""))

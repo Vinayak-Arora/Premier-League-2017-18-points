@@ -21,43 +21,40 @@ Overlapping line charts for each time. <br>
 A slider input to change to different match day frames. <br>
 Selectize input to select or deselect teams' data to be visualised. <br>
 A "Match Information" section to show the following data for the point (match) clicked on - <br>
-
 Div = League Division <br>
 Date = Match Date (dd/mm/yy) <br>
 HomeTeam = Home Team <br>
 AwayTeam = Away Team <br>
-FTHG and HG = Full Time Home Team Goals
-FTAG and AG = Full Time Away Team Goals
-FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win)
-HTHG = Half Time Home Team Goals
-HTAG = Half Time Away Team Goals
-HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win)
+FTHG and HG = Full Time Home Team Goals <br>
+FTAG and AG = Full Time Away Team Goals <br>
+FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win) <br>
+HTHG = Half Time Home Team Goals <br>
+HTAG = Half Time Away Team Goals <br>
+HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win) <br> <br>
+Match Statistics (where available) --- <br>
+Attendance = Crowd Attendance <br>
+Referee = Match Referee <br>
+HS = Home Team Shots<br>
+AS = Away Team Shots<br>
+HST = Home Team Shots on Target <br>
+AST = Away Team Shots on Target<br>
+HHW = Home Team Hit Woodwork<br>
+AHW = Away Team Hit Woodwork<br>
+HC = Home Team Corners<br>
+AC = Away Team Corners<br>
+HF = Home Team Fouls Committed<br>
+AF = Away Team Fouls Committed<br>
+HFKC = Home Team Free Kicks Conceded <br>
+AFKC = Away Team Free Kicks Conceded <br>
+HO = Home Team Offsides<br>
+AO = Away Team Offsides<br>
+HY = Home Team Yellow Cards<br>
+AY = Away Team Yellow Cards<br>
+HR = Home Team Red Cards<br>
+AR = Away Team Red Cards<br>
+HBP = Home Team Bookings Points (10 = yellow, 25 = red)<br>
+ABP = Away Team Bookings Points (10 = yellow, 25 = red)<br>
 
-Match Statistics (where available)
-Attendance = Crowd Attendance
-Referee = Match Referee
-HS = Home Team Shots
-AS = Away Team Shots
-HST = Home Team Shots on Target
-AST = Away Team Shots on Target
-HHW = Home Team Hit Woodwork
-AHW = Away Team Hit Woodwork
-HC = Home Team Corners
-AC = Away Team Corners
-HF = Home Team Fouls Committed
-AF = Away Team Fouls Committed
-HFKC = Home Team Free Kicks Conceded
-AFKC = Away Team Free Kicks Conceded
-HO = Home Team Offsides
-AO = Away Team Offsides
-HY = Home Team Yellow Cards
-AY = Away Team Yellow Cards
-HR = Home Team Red Cards
-AR = Away Team Red Cards
-HBP = Home Team Bookings Points (10 = yellow, 25 = red)
-ABP = Away Team Bookings Points (10 = yellow, 25 = red)
-
---x--
 
 Please change the following variables in each file -
 1. save_in <-  corresponding to the file directory in your computer

@@ -1,36 +1,33 @@
 # Premier-League-2017-18-points
-This visualisation in R using shiny package shows line charts for each team corresponding to the points they had on each match day.
+This visualisation in R using shiny package shows line charts for each team corresponding to the points they had on each match day. <br>
 You can select any number of the 20 teams who participated in Premier League 2017-18 season.
 
-Dataset -
+Dataset - <br>
 File named "prem.csv" is the initial data.
 Kindly save it in the desired folder in your computer.
 
 Information on each uploaded file -
 (Please execute the files in order)
 
-1. clean.R --
+1. clean.R -- <br>
 Contains the code to clean the initial dataset "prem.csv" by removing redundant columns, adding simple columns and performing general data manipulations.
 
-2. points_table.R --
+2. points_table.R -- <br>
 Contains code to create a new .csv file which will contain the points all (20) teams had on each match day (38, in total).
 
-3. app.R
-Shiny app code to visualise the data obtained from points_table.R
-Overlapping line charts for each time.
-A slider input to change to different match day frames.
-Selectize input to select or deselect teams' data to be visualised.
-A "Match Information" section to show the following data for the point (match) clicked on -
+3. app.R <br>
+Shiny app code to visualise the data obtained from points_table.R <br>
+Overlapping line charts for each time. <br>
+A slider input to change to different match day frames. <br>
+Selectize input to select or deselect teams' data to be visualised. <br>
+A "Match Information" section to show the following data for the point (match) clicked on - <br>
 
-Div = League Division
-
-Date = Match Date (dd/mm/yy)
-
-HomeTeam = Home Team
-
-AwayTeam = Away Team.
-FTHG and HG = Full Time Home Team Goals.
-FTAG and AG = Full Time Away Team Goals.
+Div = League Division <br>
+Date = Match Date (dd/mm/yy) <br>
+HomeTeam = Home Team <br>
+AwayTeam = Away Team <br>
+FTHG and HG = Full Time Home Team Goals
+FTAG and AG = Full Time Away Team Goals
 FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win)
 HTHG = Half Time Home Team Goals
 HTAG = Half Time Away Team Goals

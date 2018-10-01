@@ -15,7 +15,7 @@ Contains the code to clean the initial dataset "prem.csv" by removing redundant 
 2. points_table.R -- <br>
 Contains code to create a new .csv file which will contain the points all (20) teams had on each match day (38, in total).
 
-3. app.R <br>
+3. app.R -- <br>
 Shiny app code to visualise the data obtained from points_table.R <br>
 Overlapping line charts for each time. <br>
 A slider input to change to different match day frames. <br>

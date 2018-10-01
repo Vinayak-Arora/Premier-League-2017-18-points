@@ -2,8 +2,13 @@ library(dplyr)
 library(ggplot2)
 library(plotly)
 library(shiny)
-pts <- read.csv("D://RStudio//Prem18//points.csv")
-matchData <- read.csv("D://RStudio//Prem18//premclean.csv")
+
+save_in <- "C://Program Files//RStudio//"
+file_name <- "points.csv"
+pts <- read.csv(paste(save_in, file_name,sep = ""))
+
+file_name <- "premclean.csv"
+matchData <- read.csv(paste(save_in, file_name,sep = ""))
 
 teams <- as.factor(pts$Team) %>%
           unique() %>%
@@ -13,15 +18,17 @@ ui <- fluidPage(titlePanel("Premier League 2017/18 Matchday Record"),
                 sidebarLayout(
                   sidebarPanel(
                     fluidRow(
+                      #Names of all 20 teams to be selected from
+                      #By default, all teams are selected
                       selectizeInput("selectTeams", "Choose Teams :", teams, selected = teams, multiple = TRUE, options = NULL)
                     )
                   ),
-                  # output plot
                   mainPanel(
                     fluidRow(
                       column(width = 10, plotlyOutput("coolplot", height = 750))
                     ) ,
                     fluidRow(
+                      #A section that displays match info whenever a point on the graph is clicked on
                       verbatimTextOutput("matchInfo")
                     )
                   )
@@ -55,6 +62,7 @@ server <- function(input, output, session) {
     p <- ggplotly(p)
   })
   
+  #To get the match info when a point on the graph is clicked
   output$matchInfo <- renderPrint({
     d <- event_data("plotly_click")
     x <- matchData[ (matchData$HomeTeam == d$key | matchData$AwayTeam == d$key) & matchData$Matchday == (d$pointNumber + 1) , ]
@@ -64,7 +72,3 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui = ui, server = server)
-
-
-#reference -- https://github.com/ropensci/plotly/issues/957
-#reference -- https://plot.ly/r/cumulative-animations/

@@ -1,7 +1,7 @@
-library(dplyr)
-library(ggplot2)
-library(plotly)
-library(shiny)
+#library(dplyr)
+#library(ggplot2)
+#library(plotly)
+#library(shiny)
 
 #save_in <- "C://Program Files//RStudio//"
 #file_name <- "points.csv"

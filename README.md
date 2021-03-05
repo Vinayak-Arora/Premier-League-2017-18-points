@@ -1,7 +1,6 @@
 # Premier-League-2017-18-points
-This visualisation in R using shiny package shows cumulative lines animation for each team corresponding to the points they had on all match day. <br>
-You can select any number of the 20 teams who participated in Premier League 2017-18 season. <br>
-A segment below the graph shows information about each match which is clicked on in the line hraph. <br>
+A visualization in R using shiny package which shows cumulative lines animation for each team in the English Premier League for the season 2017-2018 , displaying how the points distribution changed for each match day for each team. Clicking on a point of any line shows the match stats for that match day. Team names can be removed accordingly for demonstration. . <br>
+A segment below the graph shows information about each match which is clicked on in the line graph. <br>
 
 Dataset - <br>
 File named "prem.csv" is the initial data.
